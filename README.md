@@ -21,7 +21,7 @@ git clone https://github.com/Taomyee/Personalized-Search-Engine.git
 Go to the project directory
 
 ```bash
-cd DD2477-elasticsearch-python-playing
+cd Personalized-Search-Engine
 ```
 
 Install needed dependencies and packages, for instance with conda.
