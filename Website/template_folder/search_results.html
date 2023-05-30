@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <a href="{{ url_for('home') }}"><button>Home page</button></a>
+    <title>Search Results for "{{ search_query }}"</title>
+  </head>
+  <body>
+    <h1>Search Results for "{{ search_query }}"</h1>
+    {% if results %}
+    <table>
+      <tr>
+        <th>Document Name</th>
+        <th>Score</th>
+      </tr>
+      {% for hit in results %}
+      <tr>
+        <td><a href="{{ url_for('document', filename=hit._source.filename) }}">{{ hit._source.filename }}</a></td>
+        <td>{{ hit._score }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p>No results found.</p>
+    {% endif %}
+  </body>
+</html>

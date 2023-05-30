@@ -1,0 +1,6 @@
+.DS_Store
+credentials/http_ca.crt
+__pycache__/
+users.db
+davisWiki/
+index.py.5443cb1a59096b223a578ebdc1ef33cc.tmp
